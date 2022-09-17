@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle: MyString
+  departure_date: 2022-09-17
+  arrive_date: 2022-09-17
+  origin: MyString
+  destination: MyString
+  waypoints: MyString
+  transport_volume: MyString
+  transporte_weight: MyString
+  minimum_price: MyString
+
+two:
+  vehicle: MyString
+  departure_date: 2022-09-17
+  arrive_date: 2022-09-17
+  origin: MyString
+  destination: MyString
+  waypoints: MyString
+  transport_volume: MyString
+  transporte_weight: MyString
+  minimum_price: MyString
