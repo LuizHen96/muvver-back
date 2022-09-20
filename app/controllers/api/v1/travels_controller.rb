@@ -51,6 +51,6 @@ class Api::V1::TravelsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def travel_params
-      params.permit(:vehicle, :departure_date, :arrive_date, :origin, :destination, :waypoints, :transport_volume, :transporte_weight, :minimum_price, :user_id)
+      params.require(:travel).permit(:vehicle, :departure_date, :arrive_date, :origin, :destination, :waypoints, :transport_volume, :transporte_weight, :minimum_price, :user_id)
     end
 end
