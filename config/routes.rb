@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resources :users do
         resources :travels
       end
+      get 'travels', to: 'travels#index'
+      get 'suggestion', to: 'suggestion#index'
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

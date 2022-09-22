@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_17_215525) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_22_035035) do
   create_table "travels", force: :cascade do |t|
     t.string "vehicle"
     t.date "departure_date"
     t.date "arrive_date"
     t.string "origin"
     t.string "destination"
-    t.string "waypoints"
+    t.text "waypoints"
     t.string "transport_volume"
-    t.string "transporte_weight"
+    t.string "transport_weight"
     t.string "minimum_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -32,6 +32,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_17_215525) do
     t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   add_foreign_key "travels", "users"
