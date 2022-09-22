@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         resources :travels, :controller => "users/travels"
       end
       get 'travels', to: 'travels#index'
-      get 'suggestions', to: 'suggestions#index'
+      post 'suggestions', to: 'suggestions#create'
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
