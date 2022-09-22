@@ -1,4 +1,4 @@
-class Api::V1::User::TravelsController < ApplicationController
+class Api::V1::Users::TravelsController < ApplicationController
   before_action :set_user
   before_action :set_travel, only: %i[ show update destroy ]
 

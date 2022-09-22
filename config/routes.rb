@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users do
-        resources :travels
+        resources :travels, :controller => "users/travels"
       end
       get 'travels', to: 'travels#index'
       get 'suggestions', to: 'suggestions#index'
