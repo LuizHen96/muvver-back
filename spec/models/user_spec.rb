@@ -21,9 +21,6 @@ RSpec.describe User, type: :model do
       user = User.new(name: 'Name', email: "sample@example.com", password: "12345678").save
       expect(user).to eq(true)
     end
-  
-  end
-
-  context 'scope tests' do 
+    
   end
 end
